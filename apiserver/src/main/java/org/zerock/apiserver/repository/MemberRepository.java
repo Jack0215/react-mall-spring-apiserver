@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.zerock.apiserver.domain.Member;
 
-public interface MemberRopository extends JpaRepository<Member, String > {
+public interface MemberRepository extends JpaRepository<Member, String > {
 
     @EntityGraph(attributePaths = {"memberRoleList"})
     @Query("select m from Member m where m.email = :email")

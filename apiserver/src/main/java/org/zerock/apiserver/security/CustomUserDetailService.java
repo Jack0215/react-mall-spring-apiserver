@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.zerock.apiserver.domain.Member;
 import org.zerock.apiserver.dto.MemberDTO;
-import org.zerock.apiserver.repository.MemberRopository;
+import org.zerock.apiserver.repository.MemberRepository;
 
 import java.util.stream.Collectors;
 
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Log4j2
 public class CustomUserDetailService implements UserDetailsService {
 
-    private final MemberRopository memberRopository;
+    private final MemberRepository memberRopository;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 

@@ -76,6 +76,6 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         }
 
         //dest
-        filterChain.doFilter(request, response);
+//        filterChain.doFilter(request, response);
     }
 }

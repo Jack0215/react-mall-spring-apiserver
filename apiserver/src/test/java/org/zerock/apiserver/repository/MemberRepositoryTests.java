@@ -12,7 +12,7 @@ import org.zerock.apiserver.domain.MemberRole;
 @Log4j2
 public class MemberRepositoryTests {
     @Autowired
-    private MemberRopository memberRopository;
+    private MemberRepository memberRopository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
